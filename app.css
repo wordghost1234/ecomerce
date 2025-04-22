@@ -1,0 +1,370 @@
+/* Normalize */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globales */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header y navegacion*/
+.nombre-sitio {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+
+.btn{
+background-color: green;
+display:block;
+color: #fff;
+text-transform: uppercase;
+font-weight: 900px;
+padding: 1rem;
+transition:background-color.3s ease-out;
+text-align: center;
+border: none;
+}
+
+.btn-hover{
+background-color: green;
+
+}
+
+.max-withd-30{
+
+  max-width: 30rem;
+}
+
+
+
+
+.nombre-sitio span {
+  color: #037bc0;
+}
+
+/* Navegación */
+.contenedor-navegacion {
+  border-top: 0.1rem solid #e1e1e1;
+}
+
+.nav-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nav-principal a {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-image: url(imagenes/producto\ 8.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 55rem;
+}
+
+/* Categorías */
+.categorias {
+  padding-top: 5rem;
+}
+
+.listado-categorias {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoria {
+  flex: 1;
+  text-align: center;
+}
+
+.categoria img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.categoria a {
+  display: block;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #037bc0;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros {
+  background-color: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.sobre-nosotros-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto-nosotros {
+  flex: 1;
+}
+
+/* Productos */
+.contenido-principal {
+  padding-top: 5rem;
+}
+
+.listado-productos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.producto {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.texto-producto {
+  padding: 2rem;
+}
+
+.texto-producto h3 {
+  margin-bottom: 1rem;
+}
+
+.precio {
+  font-size: 2rem;
+  color: #037bc0;
+  font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.grid-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.grid-footer div {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.nav-footer a:hover {
+  color: #037bc0;
+}
+
+
+img{
+
+ width: 400px;
+  height: auto; /*mantiene la proporcion original*/
+
+}
+
+
+
+/** nosotros**/
+
+.contenido-nosotros{
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-columns:repeat (auto-fit, minimax( 25rem , 1fr));
+column-gap: 4rem;
+
+}
+
+.informacion-nosotros{
+
+display:flex ;
+flex-direction:column;
+justify-content:center;
+
+}
+
+
+/**blog**/
+
+.contenedor-blog{
+
+display:grid ;
+grid-template-columns: 2fr 1fr;
+column-gap: 4rem;
+}
+
+.entrada{
+
+border-bottom: 2px solid #e1e1e1;
+padding-bottom: 4rem;
+margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+
+border: none;
+}
+
+.entrada-meta{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.entrada-meta p{
+
+font-weight: bold;
+}
+
+
+.entrada-meta span{
+ color:#037bc0 ;
+
+}
+
+
+.contenedor-blog{
+
+width: 60rem;
+margin: 0 auto;
+
+}
+
+/**galeria**/
+
+.galeria{
+
+ justify-content: center;
+  
+ list-style: none;
+ padding:0;
+ margin: 0;
+display: grid;
+grid-template-columns: repeat(3rem , 1fr);
+gap: 2rem;
+
+}
+
+.galeria img{
+display: block;
+height: 40rem;
+width: 40rem;
+object-fit: cover;
+}
+
+
+
+.contacto{
+display: flex;
+display: block;
+justify-content: center;
+}
+
+
+/** formulario**/
+
+.formulario{
+max-width: 60rem;
+margin:0 auto;
+;
+}
+
+.formulario fieldset{
+border: 1px solid black;
+}
+
+.formulario legend{
+background-color: #005485;
+width: 100px;
+text-align: center;
+color: #fff;
+text-transform:uppercase;
+font: weight 900px;
+padding: 1rem;
+margin-bottom: 4rem;
+}
+
+.campo{
+display:flex ;
+margin-bottom: 2rem;
+}
+
+
+.campo label{
+flex-basis: 10rem;
+
+}
+
+.campo input:not([type="radio"]), 
+.campo textarea
+.campo select
+{
+    flex: 1;
+    border:1px solid #fff;
+    padding: 1rem;
+  }
+
